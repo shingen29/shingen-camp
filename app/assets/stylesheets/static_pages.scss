@@ -1,0 +1,194 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-eyecatch {
+  width: 100%;
+  height: 100vh;
+  background: image-url("main.jpg")  no-repeat center;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .top-eyecatch {
+    height: 60vh;
+  }
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+#img-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+}
+@media screen and (max-width: 768px) {
+  #img-logo {
+    left: 10px;
+    top: 10px;
+    width: 40px;
+  }
+}
+
+#navToggle {
+  display: none;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+#navToggle div {
+  position: relative;
+}
+#navToggle div span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: solid 3px #555;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+#navToggle span:nth-child(1) {top:0}
+#navToggle span:nth-child(2) {top:11px}
+#navToggle span:nth-child(3) {top:22px}
+
+.top-gnav ul{
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;  
+}
+
+.top-gnav ul li {
+  margin: 0;  
+  padding: 40px 25px 0;
+}
+
+.top-gnav a{
+  color: black;
+  transition: color 1s;
+  text-decoration: none;
+}
+
+.top-gnav a:hover{
+  color: white;  
+}
+
+  @media screen and (max-width: 768px) {
+    .top-gnav {
+      position: absolute;
+      right: 0;
+      top: -300px;
+      background: rgba(255,255,255,.6);
+      width: 100%;
+      padding: 0;
+      -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
+      -moz-transition:.5s ease-in-out;
+      transition:.5s ease-in-out;
+      text-align:right;
+    }
+    .top-gnav ul {
+      display: block;
+      margin:0;
+      padding: 5px 10px;
+    }
+    .top-gnav ul li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border-bottom: dotted 1px #fff;
+      line-height: 2;
+    }
+    .top-gnav ul li a {display:block;}
+    .top-gnav ul li::after {content: ''}
+    .top-gnav ul li:last-child {border-bottom: none;}
+
+    #navToggle {display:block}
+
+    .openNav #navToggle span:nth-child(1) {
+      top: 11px;
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      transform:rotate(-45deg);
+    }
+
+    .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
+      top: 11px;
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      transform:rotate(45deg);
+    }
+
+    .openNav .top-gnav {
+      -moz-transform: translateY(350px);
+      -webkit-transform: translateY(350px);
+      transform:translateY(350px);
+    }
+    .openNav .top-gnav ul {
+      display: block;
+    }
+  }
+
+.top-title-img {
+  margin-top: 180px;
+  width: 100%;
+  text-align: center;
+}
+  @media screen and (max-width: 768px) {
+    .top-title-img {
+      margin-top: 40px;
+    }
+    .top-title-img img {
+      width: 40%;
+    }
+  }
+
+.top-subtitle-img {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+  @media screen and (max-width: 768px) {
+    .top-subtitle-img {
+      margin-top: 10px;
+    }
+    .top-subtitle-img img {
+      width: 25%;
+    }
+  }
+
+.inner-col {
+  margin: 50px auto 0;
+  width: 70%;
+  line-height: 1.5em;
+}
+.inner-col a {
+  color:#555;
+  text-decoration:none;
+  transition: .5s;
+}
+.inner-col a:hover {
+  color: #D29129;
+}
+
+.mt-1 {
+  margin-top: 16px;
+}
+
+.mt-2 {
+  margin-top: 32px;
+}
+
+.mt-3 {
+  margin-top: 48px;
+}
+
+body {
+  color: #555;
+}
