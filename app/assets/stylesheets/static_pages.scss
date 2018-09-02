@@ -3,9 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .top-eyecatch {
-  width: 100%;
   background: image-url("cover.png")  no-repeat center;
   background-size: cover;
+}
+.top-eyecatch:after {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
 }
 
 header {
