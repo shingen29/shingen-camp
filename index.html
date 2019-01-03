@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>しんげんキャンプ - フリーランスWebエンジニアのポートフォリオサイト</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="しんげんキャンプは宮崎県在住のフリーランスWebエンジニアのポートフォリオサイトです。PHP,Rubyでのサービス開発に強みがあります。">
+    <meta name="keywords" content="フリーランス, Webエンジニア, ポートフォリオ, PHP, Ruby, Symfony, Ruby on Rails, 宮崎, キャンプ, アウトドア">
+    <meta name="author" content="大塚真言">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./app/assets/stylesheets/application.css">
+  </head>
+  <body>
+    <div class="top-eyecatch">
+      <header>
+        <div id="navToggle">
+          <div>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <nav class="top-gnav">
+          <ul>
+            <li>
+              <a href="#profile">Profile</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#works">Works</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="inner-col">
+      <div class="profile mt-3" id="profile">
+        <img src="./app/assets/images/Profile.png">
+        <p>しんげん（大塚真言）</p>
+        <p class="cation">
+          1988年生まれ。東京出身、宮崎在住のWebエンジニア。<br>
+          2017年より宮崎に移住。<br>
+          フリーランスでWebサービス開発・運用を実施中。<br>
+        </p>
+      </div>
+      <div class="skills mt-3" id="skills">
+        <img src="./app/assets/images/Skills.png">
+        <p class="cation">
+          PHP, Ruby, Symfony, Ruby On Rails<br>
+          MySQL, PostgreSQL, Apache, nginx<br>
+          Mac OS, CentOS, Vagrant, AWS<br>
+          Git, Backlog, Bitbucket<br>
+        </p>
+      </div>
+      <div class="works mt-3" id="works">
+        <img src="./app/assets/images/Works.png">
+        <p class="cation">
+          [実績]<br>
+          <a href="https://faavo.jp" target="_blank">地域 × クラウドファンディング | FAAVO（ファーボ）</a>
+        </p>
+      </div>
+      <div class="contact mt-3" id="contact">
+        <img src="./app/assets/images/Contact.png">
+        <p>お気軽に相談くださいませ。</p>
+        <p class="cation">
+          <a href="mailto:info@shingen-camp.com">info@shingen-camp.com</a>
+        </p>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#navToggle').click(function() {
+          $('header').toggleClass('openNav');
+        });
+      });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-92818116-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+  </body>
+</html>
