@@ -1,5 +1,5 @@
 .top-eyecatch {
-  background: image-url("cover.png")  no-repeat center;
+  background: image-url("../app/assets/images/cover.png")  no-repeat center;
   background-size: cover;
 }
 .top-eyecatch:after {
