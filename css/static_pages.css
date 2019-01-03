@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+}
+
 .top-eyecatch {
-  background: image-url("../app/assets/images/cover.png")  no-repeat center;
+  background: no-repeat center;
+  background-image: url("../app/assets/images/cover.png");
   background-size: cover;
 }
 .top-eyecatch:after {
